@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Main Test Suite]">
-  <test thread-count="5" verbose="5" name="samplePage Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dropdown.test.DropDownTest">
+      <class name="com.draganddrop.test.DragAndDropTest">
         <methods>
           <include name="tearDown"/>
           <include name="endReport"/>
+          <include name="DragAndDrop"/>
           <include name="setExtent"/>
           <include name="setup"/>
-          <include name="selectOptionDropdown"/>
         </methods>
-      </class> <!-- com.dropdown.test.DropDownTest -->
+      </class> <!-- com.draganddrop.test.DragAndDropTest -->
     </classes>
-  </test> <!-- samplePage Test(failed) -->
-</suite> <!-- Failed suite [Main Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -3,17 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AlertAndModel.test.AlertAndModelTest">
+      <class name="com.draganddrop.test.DragAndDropTest">
         <methods>
           <include name="tearDown"/>
-          <include name="selectOptionDropdown"/>
           <include name="endReport"/>
+          <include name="DragAndDrop"/>
           <include name="setExtent"/>
           <include name="setup"/>
-          <include name="multipleWindowPopUps"/>
-          <include name="windowPopUP"/>
         </methods>
-      </class> <!-- com.AlertAndModel.test.AlertAndModelTest -->
+      </class> <!-- com.draganddrop.test.DragAndDropTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

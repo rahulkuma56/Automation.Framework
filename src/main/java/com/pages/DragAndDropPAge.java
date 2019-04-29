@@ -1,10 +1,8 @@
 package com.pages;
 
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -49,7 +47,8 @@ public class DragAndDropPAge {
 		 */
 		// this will drag element to destination
 			Thread.sleep(5000);
-		act.dragAndDrop(source, destination).build().perform();
+		//act.dragAndDrop(source, destination).build().perform();
+			act.dragAndDropBy(source, 400,64).build().perform();
 		System.out.println("Drag and drop peromed");
 		System.out.println("abcd");
 //	Action dragAndDrop = act.clickAndHold(drag)
