@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" verbose="5">
+
+ <test name="samplePage Test" >
+   <classes>
+   <class name="com.AlertAndModel.test.AlertAndModelTest" ></class>
+   <class name="com.dropdown.test.DropDownTest" ></class>
+   <class name="com.draganddrop.test.DragAndDropTest" ></class>
+   <class name="com.datepicker.test.DatePickerTest" ></class>
+   <class name="com.tabletest.test.TableTest" ></class>
+  
+</classes>
+ </test>
+ </suite>

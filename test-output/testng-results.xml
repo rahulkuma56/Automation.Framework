@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="55288" started-at="2019-04-29T09:47:54Z" finished-at="2019-04-29T09:48:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="55288" started-at="2019-04-29T09:47:54Z" finished-at="2019-04-29T09:48:49Z">
+      <class name="com.draganddrop.test.DragAndDropTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.draganddrop.test.DragAndDropTest@5e3a8624]" name="setExtent" is-config="true" duration-ms="136" started-at="2019-04-29T09:47:54Z" finished-at="2019-04-29T09:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.draganddrop.test.DragAndDropTest@5e3a8624]" name="setup" is-config="true" duration-ms="32354" started-at="2019-04-29T09:47:54Z" finished-at="2019-04-29T09:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="DragAndDrop()[pri:0, instance:com.draganddrop.test.DragAndDropTest@5e3a8624]" name="DragAndDrop" duration-ms="21655" started-at="2019-04-29T09:48:27Z" finished-at="2019-04-29T09:48:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragAndDrop -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.draganddrop.test.DragAndDropTest@5e3a8624]" name="tearDown" is-config="true" duration-ms="904" started-at="2019-04-29T09:48:48Z" finished-at="2019-04-29T09:48:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DragAndDrop status=SUCCESS method=DragAndDropTest.DragAndDrop()[pri:0, instance:com.draganddrop.test.DragAndDropTest@5e3a8624] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.draganddrop.test.DragAndDropTest@5e3a8624]" name="endReport" is-config="true" duration-ms="224" started-at="2019-04-29T09:48:49Z" finished-at="2019-04-29T09:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.draganddrop.test.DragAndDropTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

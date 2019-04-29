@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <test thread-count="5" name="samplePage Test(failed)">
+    <classes>
+      <class name="com.AlertAndModel.test.AlertAndModelTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="selectOptionDropdown"/>
+          <include name="endReport"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="multipleWindowPopUps"/>
+          <include name="windowPopUP"/>
+        </methods>
+      </class> <!-- com.AlertAndModel.test.AlertAndModelTest -->
+    </classes>
+  </test> <!-- samplePage Test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
