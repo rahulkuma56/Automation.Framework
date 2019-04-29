@@ -48,7 +48,7 @@ public class BaseTest {
 
  @BeforeMethod
  public void setup() {
-  System.setProperty("webdriver.chrome.driver", "C:\\Users\\rahul.k\\Desktop//chromedriver.exe");
+  System.setProperty("webdriver.chrome.driver", "/home/rahul/Desktop/chromedriver");
   driver = new ChromeDriver();
   driver.manage().window().maximize();
   //driver.get("http://demo.nopcommerce.com/");

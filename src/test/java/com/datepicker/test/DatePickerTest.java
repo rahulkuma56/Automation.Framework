@@ -18,14 +18,17 @@ public class DatePickerTest extends BaseTest {
 			datePickerPage.datePicker.click();
 			datePickerPage.bootstrapDatePicker.click();
 			datePickerPage.datefield.sendKeys("28/08/1995");
-			datePickerPage.datefield.sendKeys(Keys.ENTER);
-			System.out.println(datePickerPage.datefield.getText());
-			Thread.sleep(5000);
-			assertTrue(datePickerPage.datefield.getText().equals("28/08/1995"));
+			//datePickerPage.datefield.sendKeys(Keys.ENTER);
+		
+			assertTrue(datePickerPage.selectedDay.getText().equals("26"));
+			assertTrue(datePickerPage.selectedMonth.getText().equals("Aug"));
+			assertTrue(datePickerPage.selectedYear.getText().equals("1995"));
 			System.out.println("DatePicker is successfully");
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e);
+		}finally {
+			//System.exit(0);
 		}
 	}
 
