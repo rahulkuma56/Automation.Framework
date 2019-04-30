@@ -24,7 +24,7 @@ public class TableTest extends BaseTest {
 			tablePage.table.click();
 			tablePage.tableSortSearch.click();
 			tablePage.salarySort.click();
-			tablePage.sortTableAndVerify(tablePage.salary);
+			Assert.assertTrue(tablePage.sortTableAndVerify(tablePage.salary));
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e);

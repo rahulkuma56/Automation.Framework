@@ -1,9 +1,8 @@
 package com.datepicker.test;
 
-import static org.testng.Assert.assertTrue;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.pages.DatePickerPage;
@@ -19,10 +18,12 @@ public class DatePickerTest extends BaseTest {
 			datePickerPage.bootstrapDatePicker.click();
 			datePickerPage.datefield.sendKeys("28/08/1995");
 			datePickerPage.datefield.sendKeys(Keys.ENTER);
-			System.out.println(datePickerPage.datefield.getText());
-			Thread.sleep(5000);
-			assertTrue(datePickerPage.datefield.getText().equals("28/08/1995"));
-			System.out.println("DatePicker is successfully");
+			
+		
+		/*	assertTrue(datePickerPage.selectedDay.getText().equals("26"));
+			assertTrue(datePickerPage.selectedMonth.getText().equals("Aug"));
+			assertTrue(datePickerPage.selectedYear.getText().equals("1995"));*/
+			//System.out.println("DatePicker is successfully");
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e);
