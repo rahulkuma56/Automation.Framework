@@ -30,7 +30,7 @@ public class BaseTest {
   htmlReporter.config().setDocumentTitle("Automation Report"); // Tile of report
   htmlReporter.config().setReportName("Functional Testing"); // Name of the report
  // htmlReporter.config().setTheme(Theme.DARK);
-  htmlReporter.config().setTheme(Theme.STANDARD);
+  htmlReporter.config().setTheme(Theme.DARK);
   
   extent = new ExtentReports();
   extent.attachReporter(htmlReporter);
@@ -48,41 +48,14 @@ public class BaseTest {
 
  @BeforeMethod
  public void setup() {
-  System.setProperty("webdriver.chrome.driver", "/home/rahul/Desktop/chromedriver");
+  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver.exe");
   driver = new ChromeDriver();
   driver.manage().window().maximize();
-  //driver.get("http://demo.nopcommerce.com/");
+ 
   driver.get("https://www.seleniumeasy.com/test");
  }
 
-/* //Test1
- @Test
- public void noCommerceTitleTest() {
-  test = extent.createTest("noCommerceTitleTest");
-  String title = driver.getTitle();
-  System.out.println(title);
-  Assert.assertEquals(title, "nopCommerce demo store");
- }
 
- //Test2
- @Test
- public void noCommerceLogoTest() {
-  test = extent.createTest("noCommerceLogoTest");
-  boolean b = driver.findElement(By.xpath("//img[@alt='nopCommerce demo store']")).isDisplayed();
-  Assert.assertTrue(b);
- }
-
- //Test3
- @Test
- public void noCommerceLoginTest() {
-  test = extent.createTest("noCommerceLoginTest");
-  
-  test.createNode("Login with Valid input");
-  Assert.assertTrue(true);
-  
-  test.createNode("Login with In-valid input");
-  Assert.assertTrue(true);
- }*/
   
  @AfterMethod
  public void tearDown(ITestResult result) throws IOException {

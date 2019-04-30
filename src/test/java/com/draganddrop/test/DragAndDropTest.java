@@ -7,7 +7,7 @@ import com.pages.DragAndDropPAge;
 import com.tests.BaseTest;
 
 public class DragAndDropTest extends BaseTest {
-	@Test
+	@Test(priority=10)
 	public  void DragAndDrop() {
 		try {
 			test = extent.createTest("DragAndDrop", "DragAndDrop PASSED test case");
@@ -22,8 +22,6 @@ public class DragAndDropTest extends BaseTest {
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e);
-		}finally {
-			System.exit(0);
 		}
 
 	}

@@ -31,6 +31,9 @@ public class DragAndDropPAge {
 	public void performDragDrop() throws Exception {
 		
 		Actions act=new Actions(driver);
+		act.dragAndDrop(source, destination).build().perform();
+		System.out.println("Drag and drop peromed");
+		System.out.println("abcd");
 		
 //	int x=	 destination.getLocation().getX();
 //	int y = destination.getLocation().getY();
@@ -46,11 +49,9 @@ public class DragAndDropPAge {
 		WebElement drop=driver.findElement(By.xpath("//div[@id='mydropzone']"));
 		 */
 		// this will drag element to destination
-			Thread.sleep(5000);
+			
 		//act.dragAndDrop(source, destination).build().perform();
-			act.dragAndDropBy(source, 400,64).build().perform();
-		System.out.println("Drag and drop peromed");
-		System.out.println("abcd");
+		
 //	Action dragAndDrop = act.clickAndHold(drag)
 //			   .moveToElement(drop)
 //			   .release(drop)
